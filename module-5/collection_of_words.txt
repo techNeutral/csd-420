@@ -1,0 +1,2 @@
+Test the words in this file test lower and upper case words to account for case differences and test words again
+There are thirty seven words total of which twenty nine are only used once or unique
