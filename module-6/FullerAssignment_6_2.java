@@ -31,6 +31,42 @@ public class FullerAssignment_6_2 {
     //testing. I will continue to work on this assignment because I need to understand how to make it work in this
     //format and will likely want to turn it in for module 12.
     // I was also unable to test my logic so there could be logical errors in here.
+
+
+    public static void main(String[] args) {
+        //create array to use with the first bubblesort method - comparable
+        Integer[] integerArray = new Integer[7];
+        integerArray[0] = 6;
+        integerArray[1] = 2;
+        integerArray[2] = 7;
+        integerArray[3] = 1;
+        integerArray[4] = 5;
+        integerArray[5] = 3;
+        integerArray[6] = 4;
+        //integerArray.add(12);
+        //integerArray.add(4);
+        //integerArray.add(7);
+        //integerArray.add(1);
+        bubbleSort(integerArray);
+
+        //Create array and use second bubble sort method
+        Integer[] integerArray2 = new Integer[7];
+        integerArray2[0] = 6;
+        integerArray2[1] = 2;
+        integerArray2[2] = 7;
+        integerArray2[3] = 1;
+        integerArray2[4] = 5;
+        integerArray2[5] = 3;
+        integerArray2[6] = 4;
+        //I was having an issue with abstract classes and not being able to instantiated. and I ran out of time to keep
+        //testing. I will continue to work on this assignment because I need to understand how to make it work in this
+        //format.
+        bubbleSort(integerArray2, new MyComparator());
+        System.out.println();
+    }
+}
+class MyComporator<E>{
+
     public static <E> void bubbleSort(E[] list, Comparator<? super E> comparator){
         System.out.println("Comparator method for Bubble Sort");
         //same logic as the first method but in this case we have to explicitly define the comparison
@@ -55,37 +91,5 @@ public class FullerAssignment_6_2 {
                 System.out.println();
             }
         }
-    }
-
-    public static void main(String[] args) {
-        //create array to use with the first bubblesort method - comparable
-        Integer[] integerArray = new Integer[7];
-        integerArray[0] = 6;
-        integerArray[1] = 2;
-        integerArray[2] = 7;
-        integerArray[3] = 1;
-        integerArray[4] = 5;
-        integerArray[5] = 3;
-        integerArray[6] = 4;
-        //integerArray.add(12);
-        //integerArray.add(4);
-        //integerArray.add(7);
-        //integerArray.add(1);
-        bubbleSort(integerArray);
-
-        //Create array and use second bubble sort method
-        /*Integer[] integerArray2 = new Integer[7];
-        integerArray2[0] = 6;
-        integerArray2[1] = 2;
-        integerArray2[2] = 7;
-        integerArray2[3] = 1;
-        integerArray2[4] = 5;
-        integerArray2[5] = 3;
-        integerArray2[6] = 4;
-        //I was having an issue with abstract classes and not being able to instantiated. and I ran out of time to keep
-        //testing. I will continue to work on this assignment because I need to understand how to make it work in this
-        //format.
-        //bubbleSort(integerArray2, new Comparator());
-        System.out.println();*/
     }
 }

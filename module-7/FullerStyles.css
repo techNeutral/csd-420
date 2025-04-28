@@ -1,0 +1,33 @@
+.emptyCircle{
+    -fx-fill:white;
+    -fx-stroke:black;
+}
+/*
+ *  Style class
+ */
+.circleborder{
+    -fx-stroke-width: 3;
+    -fx-stroke-dash-array: 12 2 4 2;
+    -fx-stroke: grey;
+}
+/*
+ *  Style class
+ */
+.border{
+    -fx-border-color: black;
+    -fx-border-width: 5;
+}
+/*
+ * Style ID
+ */
+#redcircle{
+    -fx-fill: red;
+    -fx-stroke :red;
+}
+/*
+ * Style ID
+ */
+#greencircle{
+    -fx-fill: green;
+    -fx-stroke: green;
+}
